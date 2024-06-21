@@ -1,0 +1,45 @@
+/* Navbar için mavi tonları ve stil */
+.horizontal-navbar {
+    background-color: #2196f3; /* Mavi renk */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Beyaz yazı rengi */
+}
+
+.nav-link {
+    color: #ffffff; /* Beyaz yazı rengi */
+}
+
+.nav-link:hover {
+    color: #e91e63; /* Hover sırasında koyu pembe renk */
+}
+
+/* Navbar öğelerini yatay olarak hizala */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+/* Header ve footer için mavi tonlar */
+header {
+    background-color: #1976d2; /* Koyu mavi renk */
+}
+
+footer {
+    background-color: #1976d2; /* Koyu mavi renk */
+}
+
+/* Diğer sayfa öğeleri için mavi tonlar */
+.container h2 {
+    color: #2196f3; /* Açık mavi başlık rengi */
+}
+
+.container p {
+    color: #333333; /* Standart metin rengi */
+}

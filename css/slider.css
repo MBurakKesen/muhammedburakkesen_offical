@@ -1,0 +1,16 @@
+.slideshow {
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide.active {
+    display: block;
+}

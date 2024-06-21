@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkimda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h2>CV</h2>
+    <a class="btn btn-primary" href="https://www.mediafire.com/file/ihdytjefkptwczt/MUHAMMED_BURAK_KESEN_CV.pdf/file">CV İNDİR</a>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        // PDF dosyasının URL'si
+        var pdfUrl ="https://www.mediafire.com/file/ihdytjefkptwczt/MUHAMMED_BURAK_KESEN_CV.pdf/file";
+
+        // Yeni bir iframe oluşturulur ve PDF dosyası indirilir
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = pdfUrl;
+        document.body.appendChild(iframe);
+    });
+</script>
+
+<!-- Bootstrap JS ve bağımlılıkları (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
