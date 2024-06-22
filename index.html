@@ -1,70 +1,183 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBK</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/slider.css">
-
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="css/images.css">
-    <script src="js/slider.js"></script>
-     <script src="index.js"></script>
-
+    <style>
+        /* Özel CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar .nav-link {
+            color: #fff !important;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .hero-section {
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .carousel-item {
+            height: 500px;
+        }
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .about-section, .contact-section {
+            padding: 60px 0;
+        }
+        .about-section h2, .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- <header>
-        <h1>hello there!</h1>
-    </header> -->
-    <nav class="navbar navbar-expand-lg horizontal-navbar">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="hakkimda.html">Hakkımda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="iletisim.html">İletişim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="baglantilar.html">Bağlantılar</a>
-                    </li>
-                </ul>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">Merhaba!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Hakkımda</a>
+                </li>
+               
+            </ul>   
+        </div>
+    </div>
+</nav>
+
+<section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/WhatsApp Image 2024-06-22 at 01.27.49.jpeg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/WhatsApp Image 2024-06-22 at 01.28.24.jpeg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/WhatsApp Image 2024-06-22 at 01.33.52.jpeg" class="d-block w-100" alt="Image 3">
             </div>
         </div>
-    </nav>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <div class="slideshow">
-        <div class="slide active" id="slide1">
-            <img src="images/WhatsApp Image 2024-06-22 at 01.27.49.jpeg" alt="Italian Trulli">
+</section>
 
-        </div>
-        <div class="slide" id="slide2">
-            <img src="images/WhatsApp Image 2024-06-22 at 01.28.24.jpeg" alt="Italian Trulli">
+<section id="about" class="about-section bg-light">
+    <div class="container">
+        <h2>Hakkımda</h2>
+        <p>Merhaba, ben Burak. Mehmet Akif Ersoy Üniversitesi Bilgisayar Mühendisliği mezunuyum. Web, yapay
+            zeka ve donanım alanlarına ilgi duyuyor ve bu konularda kendimi sürekli geliştiriyorum. İleri seviyede
+            İngilizce ve başlangıç seviyesinde İspanyolca biliyorum, bu sayede uluslararası platformlarda etkili
+            iletişim kurabiliyorum. Kitap okumak, spor yapmak ve futbol oynamak gibi hobilerle dengeli bir yaşam
+            sürüyorum. Grup çalışmalarına yatkınım ve bu sayede işbirliği ve iletişim becerilerimi geliştiriyorum.
+            Gelecekteki hedefim, işimde ve iş yerimde iyi pozisyonlarda tecrübeli bir birey olmaktır</p>
+    </div>
+</section>
 
-        </div>
-        <div class="slide" id="slide3">
-            <img src="images/WhatsApp Image 2024-06-22 at 01.33.52.jpeg" alt="Italian Trulli">
+<section id="contact" class="contact-section">
+    <div class="container mt-4">
+        <h2>İletişim Bilgileri</h2>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">
+                <h5><i class="fas fa-envelope"></i> E-posta</h5>
+                <p>kesenburak9@gmail.com</p>
+            </li>
+            <li class="list-group-item">
+                <h5><i class="fas fa-phone"></i> Telefon</h5>
+                <p>+90 542 189 16 55</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
+<section id="links" class="bg-light">
+    <div class="container text-center mt-4 mb-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <i class="fab fa-github fa-4x mt-4"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">GITHUB</h5>
+                        <p class="card-text">Github Projeleri</p>
+                        <a href="https://github.com/MBurakKesen" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <i class="fab fa-linkedin fa-4x mt-4"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">LINKEDIN</h5>
+                        <p class="card-text">LinkedIn hesabı</p>
+                        <a href="https://www.linkedin.com/in/muhammed-burak-kesen-537805223" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <i class="fab fa-instagram fa-4x mt-4"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">INSTAGRAM</h5>
+                        <p class="card-text">Instagram hesabı</p>
+                        <a href="#" class="btn btn-primary">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="images/k_mburak_qr.png" class="card-img-top" alt="QR Code">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <footer>
-        &copy; 2024 MUHAMMED BURAK KESEN
-    </footer>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Muhammed Burak Kesen. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
